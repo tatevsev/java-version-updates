@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Main {
     public static void main(String[] args) {
 
-        ArrayList<Integer> items = new ArrayList<>();
+        ArrayList<Integer> items = new ArrayList<>(); //items accepts only Integer
 
         items.add(1);
         items.add(2);
@@ -25,7 +25,6 @@ public class Main {
         for (Integer each : items) {
             System.out.println(each*2);
         }
-
 
 
 
