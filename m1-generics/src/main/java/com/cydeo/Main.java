@@ -22,10 +22,12 @@ public class Main {
         BaseballPlayer pat = new BaseballPlayer("Pat");
         SoccerPlayer beckham = new SoccerPlayer("Beckham");
 
-        Team liverpool= new Team("Liverpool"); //in this case team accepting any object
-        liverpool.addPlayer(joe);
-        liverpool.addPlayer(pat);
+        Team <SoccerPlayer> liverpool= new Team("Liverpool"); //in this case team accepting any object
+        //liverpool.addPlayer(joe); isn't SoccerPlayer
+        //liverpool.addPlayer(pat); isn't SoccerPlayer
         liverpool.addPlayer(beckham);
+
+
 
 
 

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-public class Team <T> { //with <> we made Team generics
+public class Team <T extends Player> { //with <> we made Team generics, T accepts only Player class and its subclasses, T is a child of Player
 
     private String name;
 
