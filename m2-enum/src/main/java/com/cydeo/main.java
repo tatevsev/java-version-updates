@@ -35,6 +35,11 @@ public class main {
                 break;
         }
 
+        System.out.println("------------------Operation task---------------------");
+        calculate(3,5,Operation.PLUS);
+
+
+
     }
 
     private static void calculate(double x,double y,Operation operation){
