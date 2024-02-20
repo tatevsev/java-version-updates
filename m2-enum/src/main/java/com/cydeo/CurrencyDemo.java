@@ -8,4 +8,5 @@ public class CurrencyDemo {
     public static final CurrencyDemo Quarter = new CurrencyDemo();
 
 
+
 }
