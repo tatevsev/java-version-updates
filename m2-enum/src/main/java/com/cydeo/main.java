@@ -39,6 +39,10 @@ public class main {
         calculate(3,5,Operation.PLUS);
 
 
+        System.out.println("-----------How to retrieve constant value----------");
+        System.out.println(Currency.PENNY.getValue());
+        System.out.println(Currency.QUARTER.getValue());
+        System.out.println(Currency.QUARTER.ordinal()); //index 3
 
     }
 
