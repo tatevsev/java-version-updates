@@ -1,6 +1,8 @@
-package com.cydeo;
+package com.cydeo.Apple;
 
-public class AppleGreenColorPredicate implements ApplePredicate{
+import com.cydeo.Color;
+
+public class AppleGreenColorPredicate implements ApplePredicate {
 
     @Override
     public boolean test(Apple apple) {
