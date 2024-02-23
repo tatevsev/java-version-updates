@@ -7,6 +7,7 @@ public class MemberTest {
 
     public static void main(String[] args) {
 
+        /* WRONG SOLUTION
         //we are creating a list of members
         List<Member> memberList = new ArrayList<>();
         memberList.add(new Member(Gender.MALE,23));
@@ -50,6 +51,8 @@ public class MemberTest {
     }
 
 }
+*/
+
 /*
 Suppose that you are creating a social networking application. You want to
 create a feature that enables an administrator to perform any kind of action,
@@ -57,4 +60,6 @@ such as sending a message, on members of the social networking application
 that satisfy certain criteria.
 
 Criteria : Send message to Male Members whose age is between 18 and 25
- */
+*/
+    }
+}
