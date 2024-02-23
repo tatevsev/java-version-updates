@@ -22,6 +22,7 @@ public class AppleTest {
         filterApples(inventory,weightApple);
 
 
+
     }
 
     private static List<Apple> filterApples(List<Apple> inventory, ApplePredicate applePredicate){

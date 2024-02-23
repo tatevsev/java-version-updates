@@ -16,8 +16,7 @@ public class Main {
 
         printDoubled(items);
 
-
-        System.out.println("********************************************");
+        System.out.println("******************PlayerClass**Testing************************");
         FootballPlayer joe = new FootballPlayer("Joe");
         BaseballPlayer pat = new BaseballPlayer("Pat");
         SoccerPlayer beckham = new SoccerPlayer("Beckham");
