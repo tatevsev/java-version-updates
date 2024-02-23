@@ -1,9 +1,5 @@
 package com.cydeo.Apple;
 
-import com.cydeo.Apple.Apple;
-import com.cydeo.Apple.ApplePredicate;
-import com.cydeo.Color;
-
 import java.util.ArrayList;
 import java.util.List;
 

@@ -1,7 +1,5 @@
 package com.cydeo.Apple;
 
-import com.cydeo.Color;
-
 public class AppleGreenColorPredicate implements ApplePredicate {
 
     @Override

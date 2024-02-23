@@ -1,6 +1,5 @@
 package com.cydeo.Apple;
 
-import com.cydeo.Color;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
