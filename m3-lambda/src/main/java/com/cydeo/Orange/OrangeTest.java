@@ -20,6 +20,16 @@ public class OrangeTest {
 
         //faster way if we want to pass the action directly to the method
         // prettyPrintOrange(inventory,orange -> "An orange of " + orange.getWeight() + "g");
+
+        System.out.println("=======================================================");
+        //if there is more than 1 statement we need to use {} and include return
+        OrangeFormatter fancyFormatter = orange -> {
+            String ch = orange.getWeight() > 200? "Heavy" : "Light";
+            return "A" + ch + " " + orange.getColor() + " orange";
+        };
+
+        prettyPrintOrange(inventory,fancyFormatter);
+
     }
 
 
