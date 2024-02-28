@@ -29,6 +29,15 @@ public class StreamOperations {
 
         list.stream().filter(i -> i%2==0).limit(1).forEach(System.out::println);
 
+        System.out.println("          Skip               ");//skips specified number of elements
+
+        list.stream().skip(1).forEach(System.out::println);
+
+        System.out.println("        MAP                  "); //allows us to change elements by the condition given
+
+        list.stream().map(n -> n*2).filter(i -> i%3==0).forEach(System.out::println); //we increased all the elements by 2 then left only the ones that are divisible by 3
+
+
 
     }
 }
