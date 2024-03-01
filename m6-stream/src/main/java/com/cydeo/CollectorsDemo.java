@@ -4,6 +4,7 @@ import com.cydeo.CalorieTask.Dish;
 import com.cydeo.CalorieTask.DishData;
 import com.cydeo.CalorieTask.Type;
 
+import java.sql.SQLOutput;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -13,7 +14,7 @@ public class CollectorsDemo {
 
        //toCollection(Supplier) : is used to create Collection using Collector
 
-        //print elements that are even
+        System.out.println("//print elements that are even");//print elements that are even
        List<Integer> numberList =  numbers.stream()
                 .filter(p->p%2==0)
                 .collect(Collectors.toCollection(ArrayList::new)); //inside collect() we nees to put a new List to store our data
@@ -25,11 +26,11 @@ public class CollectorsDemo {
                 .collect(Collectors.toCollection(HashSet::new));
         System.out.println(numberSet);
 
-        // toSet() : returns a Collector interface that gathers the input data into a new Set
+        System.out.println("toSet() : returns a Collector interface that gathers the input data into a new Set"); // toSet() : returns a Collector interface that gathers the input data into a new Set
         Set<Integer> n = numbers.stream().filter(p->p%2==0).collect(Collectors.toSet());
         System.out.println(n);
 
-        //toList(): returns a Collector interface that gathers the input data into a new list
+        System.out.println("//toList(): returns a Collector interface that gathers the input data into a new list");//toList(): returns a Collector interface that gathers the input data into a new list
         System.out.println("LIST");
 
        List<Integer> numberList2 =  numbers.stream()
