@@ -37,5 +37,14 @@ public class DishTask {
                 map(Dish::getName)
                 .forEach(System.out::println);
 
+
+        //How would you count the number of dishes in a stream using the map
+        //and reduce methods?
+
+      long numberOfDishes =   DishData.getAll().stream().count();
+        System.out.println(numberOfDishes);
+
+
+
     }
 }
