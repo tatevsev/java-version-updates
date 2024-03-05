@@ -31,6 +31,20 @@ public class BIgDecimalDemo {
         System.out.println(number1.setScale(3,RoundingMode.FLOOR)); //23.120
 
 
+        //Do not use equals() anymore.Use compareTo()
+         System.out.println(new BigDecimal("2").compareTo(new BigDecimal("2")));
+         System.out.println(new BigDecimal("3").compareTo(new BigDecimal("2")));
+         System.out.println(new BigDecimal("1").compareTo(new BigDecimal("2")));
+         System.out.println(new BigDecimal("2").compareTo(new BigDecimal("4")));
+         System.out.println(new BigDecimal("2").compareTo(new BigDecimal("6")));
+
+
+
+
+
+
+
+
 
 
 
