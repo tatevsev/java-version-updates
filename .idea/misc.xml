@@ -11,6 +11,9 @@
         <option value="$PROJECT_DIR$/m5-comparator_interface/pom.xml" />
         <option value="$PROJECT_DIR$/m6-stream/pom.xml" />
         <option value="$PROJECT_DIR$/self-practice/pom.xml" />
+        <option value="$PROJECT_DIR$/m7-optional-biddecimal/pom.xml" />
+        <option value="$PROJECT_DIR$/m7-optional-bigdecimal/pom.xml" />
+        <option value="$PROJECT_DIR$/m8-new-version-updates/pom.xml" />
       </list>
     </option>
   </component>
