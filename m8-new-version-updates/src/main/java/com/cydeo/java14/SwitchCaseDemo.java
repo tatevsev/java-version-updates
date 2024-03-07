@@ -1,10 +1,13 @@
 package com.cydeo.java14;
 
+import java.util.Scanner;
+
 public class SwitchCaseDemo {
     public static void main(String[] args) {
 
-        var month =4;
-        switch (month){
+        var month = 2;
+
+        switch (month) {
             case 1:
             case 3:
             case 5:
@@ -27,9 +30,9 @@ public class SwitchCaseDemo {
 
                 System.out.println("***************************");
 
-                switch(month){
-                    case 1,3,5,7,8,10,12 -> System.out.println("This month has 31 days");
-                    case 4,6,9 -> System.out.println("This month has 30 days");
+                switch (month) {
+                    case 1, 3, 5, 7, 8, 10, 12 -> System.out.println("This month has 31 days");
+                    case 4, 6, 9 -> System.out.println("This month has 30 days");
                     case 2 -> System.out.println("This month has 28 or 29 days");
                     default -> System.out.println("invalid Month");
                 }
@@ -61,23 +64,37 @@ public class SwitchCaseDemo {
 
                 System.out.println("***************************");
 
-               int day1 = switch (month){
-                    case 1,3,5,7,8,10,12 -> 31;
-                    case 4,6,9 -> 30;
+                int day1 = switch (month) {
+                    case 1, 3, 5, 7, 8, 10, 12 -> 31;
+                    case 4, 6, 9 -> 30;
                     case 2 -> 28;
                     default -> 0;
                 };
 
+                System.out.println("***************************");
 
 
+                //in new updates of JAVA 14 we can add conditions and return the value using yield keyword
+                int day2 = switch (month) {
+                    case 1, 3, 5, 7, 8, 10, 12 -> 31;
+                    case 4, 6, 9 -> 30;
+                    case 2 -> {
+                        Scanner scanner = new Scanner(System.in);
+                        System.out.println("Enter year: ");
+                        int year = scanner.nextInt();
+
+                        if (year % 4 == 0)
+                            yield 29;
+                        else
+                            yield 28;
+                    }
+
+                    default -> 0;
+                };
+
+                System.out.println(day2);
 
 
-
-                }
-
-
-
-
-
+        }
     }
 }
